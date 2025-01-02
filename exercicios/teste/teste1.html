@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+        header{
+            background-color:rgb(68, 67, 67);
+        }
+        span > nav{
+            display: none;
+        }
+        span:hover > nav{
+            display: block;
+        }
+       h1::after{
+            content: "";
+        }
+        li::after{
+            content: "[link]";
+            color: gray;
+            font-style: italic;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        h2{
+        background-image:linear-gradient(to top, red,aqua);
+        background-clip: text;
+        color: transparent;
+    }
+    </style>
+    
+</head>
+<body>
+    <header >
+        <span >
+                <h1>...</h1>
+            <nav>inicio</nav>  
+            <nav>carro</nav>
+            <nav>sobre nos</nav>  
+        </span>
+        <h2>Angola</h2>
+    </header>
+   <ul>
+    
+        <a href="#">
+            <li>brasil</li>
+        </a>
+        <a href="#">
+            <li>brasil</li>
+        </a>
+        <a href="#">
+            <li>brasil</li>
+        </a>
+        <a href="#">
+            <li>brasil</li>
+        </a>
+        <a href="#">
+            <li>brasil</li>
+        </a>
+  
+   </ul>
+   
+</body>
+</html>

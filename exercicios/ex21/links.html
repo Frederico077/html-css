@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(230, 13, 13);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration:underline;
+            color: black;
+        }
+
+        a:active{
+            color: blue;
+        }
+
+        .especial{
+            background-color: rgba(255, 0, 0, 0.349);
+            color: white;
+        }
+
+        .especial::before{
+            content: "⭢";
+        }
+
+        .especial::after{
+            content: "⭠";
+        }
+
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = clildren
+        */
+        
+        div > p{
+            display: none;
+        }
+
+        div:hover >p{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li> <a href="https://github.com/" target="_blank">repositorio GitHub</a></li>
+      
+            <li><div><a href="https://www.youtube.com/cursoemvideo" class="especial">canal do youtube</a> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aspernatur cumque dolorem sit eos id ad tempore excepturi perferendis temporibus ea recusandae dolores quod! Illum culpa neque ab. Ratione, cupiditate.</p></div></li> 
+       
+        <li><a href="https://www.cursoemvideo.com/" class="especial">site do curso em vidio</a></li>
+    </ul>
+
+    <div>
+        <h1>preço</h1>
+        <p>999.999.000kz</p>
+    </div>
+</body>
+</html>
